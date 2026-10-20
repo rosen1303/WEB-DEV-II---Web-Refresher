@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading, explained for beginners! | A beginner's guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#">Trading<span>, explained.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#basics">The basics</a>
+      <a href="#markets">Markets</a>
+      <a href="#try-it">Try it</a>
+      <a href="#risk">Risk</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">A beginner's guide • No experience needed</p>
+        <h1 id="hero-title">Understand the market.<br><span>Start with the basics.</span></h1>
+        <p class="intro">What is trading? Why do prices move? And can you lose money? Explore the ideas behind buying and selling, one step at a time.</p>
+        <a class="button" href="#basics">Explore the basics <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="example-card" aria-label="Fictional share price example">
+        <div class="card-top"><span>ONE SHARE / EXAMPLE ONLY</span><span class="tag">Fictional</span></div>
+        <p class="price">£110.00</p>
+        <p class="positive">+£10.00 from a £100 purchase</p>
+        <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="small">An illustrative price move, not live market data. Prices can fall as well as rise.</p>
+      </aside>
+    </section>
+    <section id="basics" class="section">
+      <p class="eyebrow">01 / The big idea</p>
+      <h2>Trading means buying and selling.</h2>
+      <p class="section-intro">In financial markets, people trade assets such as shares or currencies, hoping to benefit from changes in their prices. A profit is possible, but so is a loss.</p>
+      <div class="grid three">
+        <article class="card"><span class="number">01</span><h3>Buy an asset</h3><p>Imagine buying one company share for £100. A share represents a small ownership stake in that company.</p></article>
+        <article class="card"><span class="number">02</span><h3>The price changes</h3><p>News, company results, interest rates and expectations can affect what buyers will pay and sellers will accept.</p></article>
+        <article class="card"><span class="number">03</span><h3>Sell and see the result</h3><p>Sell at £110 and you make £10. Sell at £90 and you lose £10. These examples exclude fees and taxes.</p></article>
+      </div>
+      <div class="note"><h3>Trading vs investing</h3><p>Trading usually focuses on shorter-term price changes. Investing generally involves holding assets for longer, often years. Both involve risk; neither guarantees a return.</p></div>
+    </section>
+    <section id="markets" class="section">
+      <p class="eyebrow">02 / What can people trade?</p>
+      <h2>Different markets. Different assets.</h2>
+      <div class="grid three">
+        <article class="card"><p class="market-label">STOCKS</p><h3>A piece of a company</h3><p>Shares are ownership stakes in businesses. Their prices can respond to earnings, growth expectations and wider economic conditions.</p><p class="example">Example: a company share</p></article>
+        <article class="card"><p class="market-label">FOREX</p><h3>One currency for another</h3><p>Currencies trade in pairs. GBP/USD expresses the value of the British pound in US dollars. A rising pair means the pound is strengthening relative to the dollar.</p><p class="example">Example: GBP/USD</p></article>
+        <article class="card"><p class="market-label">COMMODITIES</p><h3>Physical goods</h3><p>Markets also trade goods such as gold, oil and wheat, often through financial contracts rather than physical delivery. Supply and demand influence prices.</p><p class="example">Example: gold or crude oil</p></article>
+      </div>
+    </section>
+    <section id="try-it" class="section calculator-section">
+      <div><p class="eyebrow">03 / Learn by trying</p><h2>What happens when the price moves?</h2><p>Try a fictional share purchase. Change the prices and quantity to see a possible profit or loss.</p><p class="small">This simplified example assumes you buy shares outright, with no borrowing. It excludes fees, spreads, currency conversion and taxes.</p></div>
+      <div class="calculator">
+        <form id="trade-form">
+          <label for="buy-price">Buy price per share (£)</label>
+          <input id="buy-price" name="buyPrice" type="number" min="0.01" max="1000000" step="0.01" value="100" required>
+          <label for="sell-price">Sell price per share (£)</label>
+          <input id="sell-price" name="sellPrice" type="number" min="0" max="1000000" step="0.01" value="110" required>
+          <label for="quantity">Number of shares</label>
+          <input id="quantity" name="quantity" type="number" min="1" max="1000000" step="1" value="5" required>
+          <button class="button" type="submit">Calculate result</button>
+        </form>
+        <div id="result" class="result" role="status" aria-live="polite">Enter your example and select Calculate result.</div>
+      </div>
+    </section>
+    <section id="risk" class="section">
+      <p class="eyebrow">04 / Understand the downside</p>
+      <h2>Risk is part of every trade.</h2>
+      <div class="grid three">
+        <article class="card"><h3>You can lose money</h3><p>A price can move against you. A share can lose all its value, so a successful trade should never be treated as certain.</p></article>
+        <article class="card"><h3>Borrowing increases exposure</h3><p>Leverage lets someone control a larger position with less initial money. It magnifies gains and losses and can use up the initial funds quickly.</p></article>
+        <article class="card"><h3>Costs affect the result</h3><p>Broker charges and the spread—the difference between buying and selling prices—can reduce returns. Tax treatment also depends on the circumstances.</p></article>
+      </div>
+      <details><summary>What is a stop-loss?</summary><p>A stop-loss is an instruction intended to close a position if the price moves against you to a chosen level. The final execution price can differ during gaps or fast markets, so it does not guarantee a maximum loss.</p></details>
+      <details><summary>Does a rising chart guarantee another rise?</summary><p>No. A chart shows past prices. It can help someone study price behaviour, but it cannot guarantee what happens next.</p></details>
+    </section>
+  </main>
+  <footer><p class="brand">Trading<span>, explained.</span></p><p>A Web Development II refresher project. Educational examples only; no trading recommendations.</p><a href="#">Back to top ↑</a></footer>
+</body>
+</html>
