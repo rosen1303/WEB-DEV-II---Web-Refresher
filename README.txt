@@ -6,7 +6,7 @@ CSS Grid/Flexbox and vanilla JavaScript. No React, packages or external assets.
 ## Run the page
 
 To run the website please extract the project folder and open `index.html` in a browser. Keep `style.css`
-and `script.js` beside it. No installation or build command is needed to open and run the website. / To run the website as phone please press "F12" and choose the phone you would like to test
+and `script.js` in the same folder. No installation or build command is needed to open and run the website. / To run the website as phone please press "F12" and choose the phone you would like to test
 
 ## Features and code guide
 
